@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadro Kanban Profissional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="kanban-board">
+    
+    <!-- 🔴 Coluna: A Fazer -->
+    <div class="kanban-column todo">
+      <h2>A Fazer</h2>
+      <div class="kanban-cards">
+        <div class="card" draggable="true" id="card-1">Estudar HTML e CSS</div>
+        <div class="card" draggable="true" id="card-2">Criar wireframe do projeto</div>
+      </div>
+    </div>
+
+    <!-- 🟡 Coluna: Em Andamento -->
+    <div class="kanban-column doing">
+      <h2>Em Andamento</h2>
+      <div class="kanban-cards">
+        <div class="card" draggable="true" id="card-3">Montar layout do Kanban</div>
+      </div>
+    </div>
+
+    <!-- 🟢 Coluna: Concluído -->
+    <div class="kanban-column done">
+      <h2>Concluído</h2>
+      <div class="kanban-cards">
+        <div class="card" draggable="true" id="card-4">Configurar repositório Git</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- O script fica no final para garantir que o HTML carregue antes dele executar -->
+  <script src="script.js"></script>
+</body>
+</html>
